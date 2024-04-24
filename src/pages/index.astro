@@ -5,6 +5,7 @@ import { supabase } from '../lib/supabase';
 
 const { data: posts, error } = await supabase.from('posts').select();
 if (error) console.error('error', error);
+console.log(error)
 ---
 
 <Layout title="The Dog Blog | Postres branching demo">
@@ -14,7 +15,7 @@ if (error) console.error('error', error);
 		<a href="/posts/new" class="button w-[150px]">New post</a>
 	</header>
 	<main class="mx-auto container">
-		{posts?.length === 0 || error &&
+		{posts?.length === 0 &&
 			<p class="text-center mt-40 mb-8 text-2xl">No posts yet!</p>
 		}
 		<div class="grid grid-col gap-20 py-20 px-10 grid-cols-1 sm:grid-cols-2">
