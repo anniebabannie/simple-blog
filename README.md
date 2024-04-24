@@ -1,4 +1,4 @@
-# Astro + Supabase branching
+# Postgres branching with Astro + Supabase
 
 ![](supabase-branching-astro-cover.webp)
 

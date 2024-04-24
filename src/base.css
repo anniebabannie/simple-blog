@@ -10,7 +10,7 @@
     font-family: 'Aleo';
   }
   h1 {
-    @apply text-8xl font-bold;
+    @apply text-7xl font-bold;
   }
   p {
     @apply text-xl;
